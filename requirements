@@ -6,6 +6,7 @@ colorlog==4.6.2
 colormap==1.0.3
 easydev==0.10.1
 Flask==1.1.2
+gunicorn==20.0.4
 idna==2.10
 itsdangerous==1.1.0
 Jinja2==2.11.2
