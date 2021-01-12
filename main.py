@@ -26,18 +26,34 @@ def predict():
         if(Fuel_Type_Petrol=='Petrol'):
                 Fuel_Type_Petrol=1
                 Fuel_Type_Diesel=0
+                Fuel_Type_Electric=0
+                Fuel_Type_LPG=0
         elif(Fuel_Type_Petrol=='Diesel'):
             Fuel_Type_Petrol=0
             Fuel_Type_Diesel=1
+            Fuel_Type_Electric=0
+            Fuel_Type_LPG=0
+        elif(Fuel_Type_Petrol=='Electric'):
+            Fuel_Type_Petrol=0
+            Fuel_Type_Diesel=0
+            Fuel_Type_Electric=1
+            Fuel_Type_LPG=0
+        elif(Fuel_Type_Petrol=='LPG'):
+            Fuel_Type_Petrol=0
+            Fuel_Type_Diesel=0
+            Fuel_Type_Electric=0
+            Fuel_Type_LPG=1
         else:
             Fuel_Type_Petrol=0
             Fuel_Type_Diesel=0
+            Fuel_Type_Electric=0
+            Fuel_Type_LPG=0
         Year=2021-Year
         Seller_Type_Individual=request.form['Seller_Type_Individual']
         if(Seller_Type_Individual=='Individual'):
             Seller_Type_Individual=1
         else:
-            Seller_Type_Individual=0	
+            Seller_Type_Individual=0
         Transmission_Mannual=request.form['Transmission_Mannual']
         if(Transmission_Mannual=='Mannual'):
             Transmission_Mannual=1
